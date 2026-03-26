@@ -3,3 +3,4 @@ pyaudio==0.2.14
 websocket-client==1.9.0
 python-dotenv==1.2.2
 dashscope==1.25.14
+ollama==0.6.1

@@ -1,1 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+
+# 环境变量文件（重要！保护 API Key）
 .env
+
+# 运行时生成的日志文件
+interview_ontime/LLM_voice_txt.txt
+interview_ontime/LLM_response.txt
+
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# OS
+.DS_Store
+Thumbs.db
