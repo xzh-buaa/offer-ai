@@ -59,8 +59,23 @@ pip install -r requirements.txt
 
 在项目根目录创建 `.env` 文件：
 ```
-DASHSCOPE_API_KEY=your_dashscope_api_key
-ZHIPUAI_API_KEY=your_zhipuai_api_key
+# .env file
+# 阿里云DashScope
+DASHSCOPE_API_KEY = "sk-your-DashScope-key"
+DASHSCOPE_URL = "https://dashscope.aliyuncs.com/api/v1"
+DASHSCOPE_WS_URL = "wss://dashscope.aliyuncs.com/api-ws/v1/inference"
+
+# 语音识别模型
+ASR_Model = "fun-asr-realtime"
+ASR_URL = "wss://dashscope.aliyuncs.com/api-ws/v1/realtime"
+
+# LLM
+ZHIPUAI_API_KEY = "your-zhipuai-api-key"
+ZHIPUAI_URL = "https://open.api.zhipu.ai/v1/chat/completions"
+ZHIPUAI_MODEL = "glm-4.7-flash"
+
+# 本地端口
+LOCAL_PORT = 8848
 ```
 ### 启动服务
 使用智谱API，glm-4.7-flash(关闭思考)
